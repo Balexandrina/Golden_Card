@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+
+<h2 align="center">Мастерская шоколада "Золотая Карта" - <br/>Шоколад как искусство</h2>
+<center><img src="/static/images_html/main.jpg" width="1000" height="600"></center>
+
+<div class="parent">
+    <div class="child">
+        <h3>Подарочный плиточный шоколад</h3>
+        Мы создаем потрясающие шоколадные панно из натурального шоколада ручной работы в оригинальной упаковке.
+    </div>
+    <div class="child">
+        <h3>Брендированный шоколад</h3>
+        Мы используем современные технологии, собственную рецептуру, для вас, для вашего бизнеса и ваших клиентов.
+    </div>
+</div>
+
+<h2 align="center">Невероятная детализация</h2>
+<h3 align="center">Собственное производство, рецептура и технологии — <br/>залог высокого качества и уникальности.</h3>
+
+<video class="center" autoplay="autoplay" controls width="1000">
+    <source src="/static/video_html/chocolate.mp4" type="video/mp4"/>
+</video>
+{% endblock %}
