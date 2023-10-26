@@ -1,7 +1,8 @@
 ## Golden Card
 This is a [website](https://balexandrina.github.io/Golden_Card/) of souvenir chocolate "Golden Card".
 
-# ![Main page](https://github.com/Balexandrina/Golden_Card/tree/main/img/m1.png)
+## Site
+https://disk.yandex.com.am/i/3d_UmHWEA-TIwQ
 
 ### Directory "static" 
 - It contains a subdirectory **"css"**, containing styles for all pages of the site.
