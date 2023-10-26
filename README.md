@@ -2,7 +2,7 @@
 This is a website of souvenir chocolate "Golden Card".
 
 ## Site
-https://disk.yandex.com.am/i/3d_UmHWEA-TIwQ
+[Watch videi](https://disk.yandex.com.am/i/3d_UmHWEA-TIwQ)
 
 ### Directory "static" 
 - It contains a subdirectory **"css"**, containing styles for all pages of the site.
