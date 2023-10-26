@@ -1,5 +1,5 @@
 ## Golden Card
-This is a [website](https://balexandrina.github.io/Golden_Card/) of souvenir chocolate "Golden Card".
+This is a website of souvenir chocolate "Golden Card".
 
 ## Site
 https://disk.yandex.com.am/i/3d_UmHWEA-TIwQ
