@@ -8,6 +8,22 @@ html, body {
     width: 100%;
 }
 
+.main_img {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+    font-size: 26px;
+    text-align: left;
+    color: white;
+}
+
 a {
     color: #0059b2;
     text-decoration: none;
