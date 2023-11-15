@@ -325,3 +325,30 @@ header {
     margin: 10px;
 }
 /* _____BLOG_____ */
+
+/* _____PAGE404_____ */
+.page404 {
+    text-align: center;
+    color: #693B0F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.page404 img {
+    width: 80%;
+}
+/* _____PAGE404_____ */
+
+.post_title {
+    color: #693B0F;
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    width: 100%;
+}
