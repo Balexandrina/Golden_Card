@@ -43,7 +43,7 @@ def before_first_request():
 def index():
     db = get_db()
     dbase = FDataBase(db)
-    return render_template('index.html', menu = dbase.getMenu())
+    return render_template('index.html', title='Главная', menu = dbase.getMenu())
 
 @app.route('/about')
 def about():
@@ -75,7 +75,7 @@ def blog():
     db = get_db()
     posts = db.execute('SELECT * FROM posts').fetchall()
     db.close()
-    return render_template('blog.html', posts = posts)
+    return render_template('blog.html', title='Блог', posts = posts)
 
 @app.route('/<int:post_id>')
 def get_post(post_id):
@@ -84,6 +84,10 @@ def get_post(post_id):
     post = db.execute('SELECT * FROM posts WHERE id = ?', (post_id,)).fetchone()
     db.close()
     return render_template('post.html', post=post)
+ 
+@app.errorhandler(404)
+def pageNotFount(error):
+    return render_template('page404.html', title="Страница не найдена")
 
 if __name__ == '__main__':
     app.run(debug=True)
