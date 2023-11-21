@@ -1,7 +1,6 @@
 html, body {
     font-family: 'Montserrat';
     font-style: normal;
-    color: #693B0F;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -25,7 +24,7 @@ html, body {
 }
 
 a {
-    color: #0059b2;
+    color: black;
     text-decoration: none;
 }
 
@@ -49,6 +48,7 @@ div.content { /* основной блок контента */
 
 .form-contact p {
     margin: 10px 0 10px 0;
+    color: #693B0F;
     line-height: 1.5;
     font-weight: 600;
 }
@@ -57,7 +57,6 @@ div.content { /* основной блок контента */
     font-size: 16px;
 }
 
-/* ______Instant messages______ */
 .flash {
     padding: 10px;
     width: 170px;
@@ -69,7 +68,6 @@ div.content { /* основной блок контента */
 .flash.error {
     background: #FF9C9C;
 }
-/* ______Instant messages______ */
 
 ul.list-posts {
     list-style: none;
@@ -96,6 +94,7 @@ h2 {
     padding-bottom: 1%;
     text-transform: uppercase;
     letter-spacing: .20em;
+    /* color: #693B0F; */
     font-weight: 600;
     line-height: 1.5;
 }
@@ -103,6 +102,7 @@ h2 {
 h3 {
     padding-top: 1%;
     padding-bottom: 1%;
+    color: #693B0F;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .20em;
@@ -112,8 +112,9 @@ h3 {
 .image-container {
     display: inline-block;
     width: 310px; 
-    margin-right: 20px;
+    margin-right: 20px; /* Отступ между элементами */
     vertical-align: top;
+    color: #693B0F;
     font-weight: 400;
     margin-left: 120px;
 }
@@ -124,7 +125,9 @@ h3 {
     width: 500px; 
     margin-top: 20px;
     text-align: center;
+    color: #693B0F;
     font-weight: 400;
+
 }
 
 .image-structure {
@@ -132,6 +135,7 @@ h3 {
     width: 250px; 
     margin-right: 0px;
     vertical-align: top;
+    color: #693B0F;
     font-weight: 400;
     font-size: 1.2em;
     margin-left: 150px;
@@ -139,6 +143,7 @@ h3 {
 }
 
 .brand_chocolate li {
+    color: #693B0F;
     line-height: 1.5;
     margin-left: 150px;
     font-weight: 400;
@@ -150,11 +155,13 @@ h3 {
     width: 180px; 
     margin-right: 260px;
     vertical-align: top;
+    color: #693B0F;
     font-weight: 600;
     margin-left: 170px;
 }
 
 .images_brand_chocolate p {
+    color: #693B0F;
     line-height: 1.5;
     font-weight: 600;
 }
@@ -165,8 +172,9 @@ h3 {
 }
   
 .child {
+    color: #693B0F;
     font-weight: 600;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
     width: 450px;
 }
@@ -180,17 +188,17 @@ h3 {
 .footer {
     display: flex;
     justify-content: center;
-    margin-top: 30px; 
-    width: 99%; 
-    margin-left: 9px;
+    margin-top: 30px;
+    width: 100%; 
     font-weight: 600;
 }
 
 .sales {
-    margin-right: 150px; 
+    margin-right: 150px;
+    color: #693B0F;
     line-height: 1.5;
 }
-  
+ 
 .symbol {
    color: #fffcfc;
    margin-top: 10px;
@@ -206,7 +214,7 @@ h3 {
 /* _________________HEADER________________________ */
 
 header {
-    padding-top: 15px;
+    padding-top: 30px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -225,12 +233,12 @@ header {
 }
 
 .menu li {
-    margin-right: 80px; 
+    margin-right: 80px; /* отступ между элементами */
 }
 
 .logo { 
-    padding-left: 120px;
-    margin-right: 100px; 
+    padding-left: 150px;
+    margin-right: 100px; /* отступ от лого до др элементов */
 } 
 
 .menu a {
@@ -239,6 +247,7 @@ header {
     text-transform: uppercase;
     letter-spacing: .27em;
     color: #3F4137;
+    /* font-weight: bold; */
 } 
 
 /* _____ABOUT US_____ */
@@ -247,21 +256,24 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    width: 100%;
 }
   
 .why_are_we_text, .techn1, .techn2 {
-    width: 50%;
+    width: 100%;
     text-align: left;
+    color: #693B0F;
     line-height: 1.5;
     margin: 10px;
-    font-size: 1.5em
+    font-size: 1.1em;
+    margin-left: 140px; 
 }
 
 .image_why_are_we, .image_techn1, .image_techn2 {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 20px;
+    padding-left: 30px;
     margin: 10px;
 }
   
@@ -270,19 +282,6 @@ header {
     height: auto;
 }
 /* _____ABOUT US_____ */
-
-/* _____Product-Catalog OUR SHOPS_____ */
-.cont {
-    display: flex;
-    justify-content: center;
-    margin-left: 300px; 
-}
-
-.from_siberia, .shops {
-    line-height: 1.5;
-    margin-right: 100px;
-    margin-bottom: 20px;
-}
 
 /* _____BLOG_____ */
 .blog_container {
@@ -295,25 +294,22 @@ header {
 .blog_title {
     margin: 0;
     padding-left: 95px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     color: #693B0F;
+    font-size: 1.2em;
 } 
 
-.blog_content {
+.blog_content, .continue_content {
     width: 100%;
     text-align: left;
     padding-left: 95px;
-    font-family: 'Montserrat';
-    font-style: normal;
     padding-right: 40px;
+    line-height: 30px;
+    color: black;
 }
 .blog_container_child {
     width: 50%;
     text-align: left;
-    font-family: 'Montserrat';
-    font-style: normal;
     line-height: 1.5;
 }
 
@@ -324,14 +320,27 @@ header {
     padding-left: 20px;
     margin: 10px;
 }
+
 /* _____BLOG_____ */
+
+/* _____Product-Catalog OUR SHOPS_____ */
+.cont {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px; 
+}
+
+.from_siberia, .shops {
+    color: #693B0F;
+    line-height: 1.5;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
 
 /* _____PAGE404_____ */
 .page404 {
     text-align: center;
     color: #693B0F;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-size: 1.2em;
     font-weight: 600;
     margin-top: 8%;
@@ -343,12 +352,16 @@ header {
 }
 /* _____PAGE404_____ */
 
-.post_title {
-    color: #693B0F;
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-align: center;
+.post_content {
+    font-size: 1.0em;
+    padding-left: 10%;
     margin-top: 8%;
     margin-bottom: 8%;
     width: 100%;
+    line-height: 30px;
+}
+}
+
+.post_content img, p {
+    width: 80%;
 }
