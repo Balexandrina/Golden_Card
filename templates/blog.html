@@ -3,26 +3,22 @@
 {% block content %}
 {{ super() }}
 
-<h2 align="center">Блог</h2>
 {% for post in posts %}
 <div class="blog_container">
     <div class="blog_container_child">
-        <a href="{{ url_for('get_post', post_id=post['id']) }}">
             <p class="blog_title">{{ post['title'] }}</p>
         </a>
         <p class="blog_content">{{ post['content'] | striptags }}</p>
+        <a href="{{ url_for('get_post', post_id=post['id']) }}">
+            <p class="continue_content">Читать далее...</p>
+        </a>
     </div>
     <div class="image_blog">
-        {% if post['id'] == 1 %}
-        <img src="/static/images_html/blog_novosib.jpg" width="600" height="400">
-        {% else %}
-        <img src="/static/images_html/main.jpg" width="600" height="400">
-        {% endif %}
+        <img src="/static/images_html/{{ post['img_name'] }}" width="600" height="400">
     </div>
 </div>
 {% endfor %}
 </ul>
 </body>
 </html>
-
 {% endblock %}
