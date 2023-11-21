@@ -1,7 +1,6 @@
 import sqlite3
 import math
 import time
-import re
 from flask import url_for
  
 class FDataBase:
@@ -18,7 +17,7 @@ class FDataBase:
         except:
             print("Ошибка чтения из БД")
         return []
-    
+     
     def addReview(self, title, text):
         try:
             tm = math.floor(time.time())
@@ -34,12 +33,6 @@ class FDataBase:
         try:
             self.__cur.execute("SELECT title, text FROM review WHERE url LIKE ? LIMIT 1", (alias,))
             res = self.__cur.fetchone()
-            if res:
-                base = url_for('static', filename='images_html')
-                text = re.sub(r"(?P<tag><img\s+[^>]*src=)(?P<quote>[\"'])(?P<url>.+?)(?P=quote)>",
-                    "\\g<tag>"+base+"/\\g<url>>",
-                    res['text'])
-                return (res['title'], text)
         except sqlite3.Error as e:
             print("Ошибка получения статьи из БД "+str(e))
  
@@ -47,10 +40,9 @@ class FDataBase:
     
     def getPostsAnonce(self):
         try:
-            self.__cur.execute(f"SELECT id, title, text FROM review ORDER BY time DESC")
+            self.__cur.execute(f"SELECT id, title, text, time FROM review ORDER BY time DESC")
             res = self.__cur.fetchall()
             if res: return res
         except sqlite3.Error as e:
             print("Ошибка получения статьи из БД "+str(e))
- 
         return []
