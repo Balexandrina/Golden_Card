@@ -21,13 +21,13 @@ This is the main file that runs the site. The work was checked as follows:
 ### FDataBase.py
 The database is needed to save customer reviews and display them on the site in the "Reviews" section.
 
+### BlogDB.py
+This database is intended for storing blog posts of the site.
+
 ### site.db
 It contains database tables. 
 *You can generate your own database. To do this, in the file "flsite.py" you need to comment out the lines of code to launch the site (if __name__ == '__main__':
-    app.run(debug=True)), uncomment create_db() and run the program. You will have a database created. After that, you need to return the code to its original state.*
-
-### sq_db.sql
-The file contains the creation of database tables.
+    app.run(debug=True)), uncomment create_db() and insert_posts() and run the program. You will have a database created. After that, you need to return the code to its original state.*
 
 
 
